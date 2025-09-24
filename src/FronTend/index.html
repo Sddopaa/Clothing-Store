@@ -3,28 +3,30 @@
   <head>
     <title>OG</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="Js/title.js"></script>
   </head>
   <body>
     <header>
       <h1 id="logo">ЛОГО</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#" class="nav-link">Дрипчик</a></li>
-          <li><a href="#" class="nav-link">Свага</a></li>
-          <li><a href="#" class="nav-link">МЯУ</a></li>
-        </ul>
-      </nav>
+      <div class="header-right">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="nav-link">Дрипчик</a></li>
+            <li><a href="#" class="nav-link">Свага</a></li>
+            <li><a href="#" class="nav-link">МЯУ</a></li>
+          </ul>
+        </nav>
 
-      <nav class="user-nav">
-        <form id="search-form">
-          <input type="text" placeholder="Поиск" id="search-input" />
-          <button type="submit" id="search-btn">Поиск</button>
-        </form>
-        <a href="#" class="cart-link">Корзина</a>
-        <a href="#" class="profile-link">Профиль</a>
-      </nav>
+        <nav class="user-nav">
+          <form id="search-form">
+            <input type="text" placeholder="Поиск" id="search-input" />
+            <button type="submit" id="search-btn">Поиск</button>
+          </form>
+          <a href="#" class="cart-link">Корзина</a>
+          <a href="#" class="profile-link">Профиль</a>
+        </nav>
+      </div>
     </header>
 
     <!--Баннер Категории-->
@@ -43,7 +45,8 @@
 
         <a href="#" class="category-item">
           <img src="IMG/dripik.jpg" alt="Джинсеки" class="category-image" />
-          <span class="category-name">Джинсеки</span>
+          <span class="category-name">Джинсеки</span
+          ><!--В CSS переделать анимацию, чтоб приближение при наведении на фото с94-->
         </a>
       </div>
     </section>
@@ -53,15 +56,15 @@
       <h2>Популярный Дрипчик</h2>
       <div class="product-list">
         <article class="product-card">
-          <img src="#" alt="SWAGA" class="product-image" />
-          <h3 class="product-title">Футболка</h3>
+          <img src="IMG/swag.jpg" alt="SWAGA" class="product-image" />
+          <h3 class="product-title">Курточка</h3>
           <p class="product-desc">Описание</p>
           <span class="price">₽1990</span>
           <button class="add-to-cart">В корзину</button>
         </article>
 
         <article class="product-card">
-          <img src="#" alt="VIVI" class="product-image" />
+          <img src="IMG/mili.jpg" alt="VIVI" class="product-image" />
           <h3 class="product-title">Джинсеки</h3>
           <p class="product-desc">Описание</p>
           <span class="price">₽3990</span>
