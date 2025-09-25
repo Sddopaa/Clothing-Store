@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ПРОФИЛЬ</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/profile.css" />
+        <script src="Js/title.js"></script>
+    </head>
+    <body>
+        <header>
+      <h1 id="logo">ЛОГО</h1>
+      <div class="header-right">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="nav-link">Дрипчик</a></li>
+            <li><a href="#" class="nav-link">Свага</a></li>
+            <li><a href="#" class="nav-link">МЯУ</a></li>
+          </ul>
+        </nav>
+
+        <nav class="user-nav">
+          <form id="search-form">
+            <input type="text" placeholder="Поиск" id="search-input" />
+            <button type="submit" id="search-btn">Поиск</button>
+          </form>
+          <a href="#" class="cart-link">Корзина</a>
+          <a href="#" class="profile-link">Профиль</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="ava-nick">
+                <img src="IMG/ava.jpg" alt="Аватар профиля" class="avatar">
+                <p class="nickname">Имя пользователя</p> 
+                <button class="change_ava">Изменить фото</button>
+                <p class="email">Почта</p>
+            </div>
+            <div class="gen_inf">
+                <h2>Общая информация</h2>
+            </div>
+            <form class="form">
+                <label for="name">Имя: </label>
+                <input type="text" id="name" name="name" placeholder="Введите имя" required>
+
+                <label for="surname">Фамилия: </label>
+                <input type="text" id="surname" name="surname" placeholder="Введите фамилию" required>
+
+                <label for="email">Почта: </label>
+                <input type="email" id="email" name="email" value="qwerty12345@gmail.com" required>
+
+                <label for="address">Адрес: </label>
+                <input type="text" id="address" name="address" placeholder="Введите адресс" required>
+
+                <p>Пол: </p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+
+                <button class="save_btn">Сохранить</button>
+            </form>
+
+        </section>
+    </main>
+    </body>
+</html>
