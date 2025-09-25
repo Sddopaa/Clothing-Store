@@ -4,30 +4,60 @@
     <title>OG</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="Js/title.js"></script>
   </head>
   <body>
     <header>
-      <h1 id="logo">ЛОГО</h1>
-      <div class="header-right">
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#" class="nav-link">Дрипчик</a></li>
-            <li><a href="#" class="nav-link">Свага</a></li>
-            <li><a href="#" class="nav-link">МЯУ</a></li>
-          </ul>
-        </nav>
+      <h1 id="logo"><a href="index.html">TheLoop.A</a></h1>
 
-        <nav class="user-nav">
-          <form id="search-form">
-            <input type="text" placeholder="Поиск" id="search-input" />
-            <button type="submit" id="search-btn">Поиск</button>
-          </form>
-          <a href="#" class="cart-link">Корзина</a>
-          <a href="#" class="profile-link">Профиль</a>
-        </nav>
+      <div class="header-right">
+        <!-- Главное меню -->
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">О Нас</a>
+        <a href="#" class="nav-link">Отзывы</a>
+
+        <!-- Поиск -->
+        <form id="search-form">
+          <input type="text" placeholder="Поиск" id="search-input" />
+          <button type="submit" id="search-btn">Поиск</button>
+        </form>
+
+        <!-- Корзина и профиль -->
+        <a href="#" class="cart-link">Корзина</a>
+        <a href="#" class="profile-link">Профиль</a>
       </div>
     </header>
+
+    <section id="hero">
+      <div class="hero-carousel">
+        <!-- исправили "carusel" на "carousel" -->
+        <div class="hero-slide active">
+          <img src="IMG/hooood.jpeg" alt="Скидка на ХУУУДАКИ" />
+          <div class="hero-text">
+            <h2>Скидки на Худаки 15%</h2>
+            <a href="#" class="btn">Посмотреть</a>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="IMG/voyvoy.jpeg" alt="Новинки 2025" />
+          <div class="hero-text">
+            <h2>Самый капающий Дрипчик этой недели</h2>
+            <a href="#" class="btn">Посмотреть Свагу</a>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="IMG/pants.jpg" alt="Популярная тема" />
+          <div class="hero-text">
+            <h2>Что чаще ракают</h2>
+            <a href="#" class="btn">Чекнуть</a>
+          </div>
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
 
     <!--Баннер Категории-->
     <section id="categories">
@@ -92,5 +122,6 @@
       </div>
       <p class="footer-copy">© 2025 Дрипчик с ПиПиськи Накапал</p>
     </footer>
+    <script src="Js/title.js"></script>
   </body>
 </html>
