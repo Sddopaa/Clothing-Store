@@ -1,67 +1,159 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ПРОФИЛЬ</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="css/profile.css" />
-        <script src="Js/title.js"></script>
-    </head>
-    <body>
-        <header>
-      <h1 id="logo">ЛОГО</h1>
-      <div class="header-right">
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#" class="nav-link">Дрипчик</a></li>
-            <li><a href="#" class="nav-link">Свага</a></li>
-            <li><a href="#" class="nav-link">МЯУ</a></li>
-          </ul>
-        </nav>
+  <head>
+    <title>ПРОФИЛЬ</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="Js/title.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo"><a href="index.html">TheLoop.A</a></h1>
 
-        <nav class="user-nav">
-          <form id="search-form">
-            <input type="text" placeholder="Поиск" id="search-input" />
-            <button type="submit" id="search-btn">Поиск</button>
-          </form>
-          <a href="#" class="cart-link">Корзина</a>
-          <a href="#" class="profile-link">Профиль</a>
-        </nav>
+      <div class="header-right">
+        <!-- Главное меню -->
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">О Нас</a>
+        <a href="#" class="nav-link">Отзывы</a>
+
+        <!-- Поиск -->
+        <form id="search-form">
+          <input type="text" placeholder="Поиск" id="search-input" />
+          <button type="submit" id="search-btn">Поиск</button>
+        </form>
+
+        <!-- Корзина и профиль -->
+        <a href="#" class="cart-link">Корзина</a>
+        <a href="#" class="profile-link">Профиль</a>
       </div>
     </header>
     <main>
-        <section class="profile">
-            <div class="ava-nick">
-                <img src="IMG/ava.jpg" alt="Аватар профиля" class="avatar">
-                <p class="nickname">Имя пользователя</p> 
-                <button class="change_ava">Изменить фото</button>
-                <p class="email">Почта</p>
+      <section id="profile">
+        <div class="ava-nick">
+          <img src="IMG/ava.jpg" alt="Аватар профиля" class="avatar" />
+          <button class="change_ava">Изменить фото</button>
+          <p class="nickname">6tenc</p>
+          <p class="email">big_dick6sm@gmail.com</p>
+        </div>
+        <div class="gen_inf">
+          <h2>Приватная информация</h2>
+          <form class="form">
+            <div class="form-columns">
+              <div class="column-left">
+                <label for="input-name">Имя: </label>
+                <input
+                  type="text"
+                  id="input-name"
+                  name="name"
+                  placeholder="Введите имя"
+                  required
+                />
+
+                <label for="input-surname">Фамилия: </label>
+                <input
+                  type="text"
+                  id="input-surname"
+                  name="surname"
+                  placeholder="Введите фамилию"
+                  required
+                />
+
+                <label for="input-email">Почта: </label>
+                <input
+                  type="email"
+                  id="input-email"
+                  name="email"
+                  value="qwerty12345@gmail.com"
+                  required
+                />
+              </div>
+
+              <div class="column-right">
+                <label for="input-address">Адрес: </label>
+                <input
+                  type="text"
+                  id="input-address"
+                  name="address"
+                  placeholder="Введите адресс"
+                  required
+                />
+
+                <p class="gender">Пол:</p>
+                <div class="form-gender">
+                  <input
+                    type="radio"
+                    id="input-male"
+                    name="gender"
+                    value="male"
+                  />
+                  <label for="input-sex">Мужской</label>
+                  <input
+                    type="radio"
+                    id="input-female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="input-sex">Женский</label>
+                </div>
+              </div>
             </div>
-            <div class="gen_inf">
-                <h2>Общая информация</h2>
-            </div>
-            <form class="form">
-                <label for="name">Имя: </label>
-                <input type="text" id="name" name="name" placeholder="Введите имя" required>
+            <button class="save_btn">Сохранить</button>
+          </form>
+        </div>
+      </section>
 
-                <label for="surname">Фамилия: </label>
-                <input type="text" id="surname" name="surname" placeholder="Введите фамилию" required>
+      <section id="recently-viewed">
+        <h2>Недавно просмотренные товары</h2>
+        <div class="recent-products">
+          <article class="recent-product-card">
+            <img src="IMG/swag.jpg" alt="SWAGA" class="recent-product-image" />
+            <h3 class="recent-product-title">Курточка</h3>
+            <p class="recent-product-desc">Описание</p>
+            <span class="recent-product-price">₽1990</span>
+            <button class="add-to-recent-product">В корзину</button>
+          </article>
 
-                <label for="email">Почта: </label>
-                <input type="email" id="email" name="email" value="qwerty12345@gmail.com" required>
-
-                <label for="address">Адрес: </label>
-                <input type="text" id="address" name="address" placeholder="Введите адресс" required>
-
-                <p>Пол: </p>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Мужской</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Женский</label>
-
-                <button class="save_btn">Сохранить</button>
-            </form>
-
-        </section>
+          <article class="recent-product-card">
+            <img
+              src="IMG/t-shirt.jpeg"
+              alt="VIVI"
+              class="recent-product-image"
+            />
+            <h3 class="recent-product-title">Футболочка</h3>
+            <p class="recent-product-desc">Описание</p>
+            <span class="recent-product-price">₽1990</span>
+            <button class="add-to-recent-product">В корзину</button>
+          </article>
+          <article class="recent-product-card">
+            <img src="IMG/xydi.jpg" alt="VIVI" class="recent-product-image" />
+            <h3 class="recent-product-title">Худак</h3>
+            <p class="recent-product-desc">Описание</p>
+            <span class="recent-product-price">₽6990</span>
+            <button class="add-to-recent-product">В корзину</button>
+          </article>
+        </div>
+      </section>
     </main>
-    </body>
+    <!--Подвальчик-->
+    <footer>
+      <div class="footer-about">
+        <h2>Дрипчик</h2>
+        <p>инфа о нас</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#" class="footer-link">О нас</a>
+        <a href="#" class="footer-link">Контакты</a>
+        <a href="#" class="footer-link">Git</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" class="footer-link">TG</a>
+        <a href="#" class="footer-link">Insta</a>
+      </div>
+      <p class="footer-copy">© 2025 Дрипчик с ПиПиськи Накапал</p>
+    </footer>
+    <script src="Js/title.js"></script>
+  </body>
 </html>
